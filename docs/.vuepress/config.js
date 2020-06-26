@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Linux, Bash e la Command Line',
-  description: 'I primi passi verso linux',
+  title: 'Linux Sever',
+  description: 'Corso di CentOS, virtualizzazione e networking',
   themeConfig: {
     logo: '/assets/img/logo.png',
     repo: 'handgull/Linux-bash-cookbook/',
@@ -9,10 +9,10 @@ module.exports = {
     editLinkText: 'Help us improve this page!',
     lastUpdated: 'Last Updated',
     nav: [
-      { text: 'Bash', link: '/bash/' }
+      { text: 'Linux Server', link: '/linux-server/' }
     ],
     sidebar: {
-      '/bash/': getBashSidebar('Bash')
+      '/linux-server/': getBashSidebar('Linux Server')
     },
     smoothScroll: true
   },
@@ -36,10 +36,16 @@ function getBashSidebar (groupA) {
       sidebarDepth: 2,
       children: [
         '',
-        './fs-manipulation/',
-        './redirection/',
-        './env/',
-        './scripting/'
+        './virtualization/',
+        './hyperv-first-steps/',
+        './install-centos/',
+        './networking/',
+        './hyperv-checkpoint/',
+        './nfs-service/',
+        './dhcp-dns-connessioni-client-server/',
+        './snap-e-risorse-dinamiche/',
+        './nfs-utilization/',
+        './linux-history/'
       ]
     }
   ]
